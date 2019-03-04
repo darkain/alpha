@@ -1,0 +1,31 @@
+[Paths]
+Root=..
+System=..\System
+Script=..\Scripts
+Music=..\Muzix
+Sound=..\Sounds
+Grafix=..\Grafix
+Maps=..\Maps
+
+[Header]
+Name=Darkain's Angel (Alpha Release)
+MainScript=Darkain.DAC
+Engine=Alpha6.EXE
+StartupFullscreen=0
+PlayMusic=0
+Controls=Gravis 4-Button Gamepad.DAI
+
+[MenuX]
+DAX=Menu.DAX
+DAY=Menu.DAY
+
+
+;%System%
+;%Script%
+;$Music%
+;%Sound%
+;%Grafix%
+;%Maps%
+;%Win%
+;%WinSys%
+

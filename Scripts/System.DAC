@@ -1,0 +1,57 @@
+'CAUTION !!!!!
+'DO NOT MODIFY THIS FILE !!!!!
+'IT MAY CAUSE THE ENGINE TO CRASH !!!!!
+
+
+'General
+Sub DA_InitGame()
+End Sub
+
+Sub DA_FrameUpdate(DA_Frames)
+End Sub
+
+
+'Timers
+Sub DA_Timer100(DA_Ticks)
+End Sub
+
+Sub DA_Timer250(DA_Ticks)
+End Sub
+
+Sub DA_Timer333(DA_Ticks)
+End Sub
+
+Sub DA_Timer500(DA_Ticks)
+End Sub
+
+Sub DA_Timer750(DA_Ticks)
+End Sub
+
+Sub DA_Timer1000(DA_Ticks)
+End Sub
+
+
+'Input - Directions
+Function DA_X_Pos(X_Value)
+End Function
+
+Function DA_X_Neg(X_Value)
+End Function
+
+Function DA_X_Center(X_Value)
+End Function
+
+Function DA_Y_Pos(Y_Value)
+End Function
+
+Function DA_Y_Neg(Y_Value)
+End Function
+
+Function DA_Y_Center(Y_Value)
+End Function
+
+Function ButtonPressed(ButtonNum)
+End Function
+
+Function ButtonUnPressed(ButtonNum)
+End Function

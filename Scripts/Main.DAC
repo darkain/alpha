@@ -1,0 +1,200 @@
+Dim MainMenuItem
+
+' -=- This section predifined in SystemVar.DAI -=-
+''Active Window information
+'Dim ActiveWin
+'Const WalkWin = 1
+'Const MenuWin = 2
+'
+''Active Menu
+'Dim ActiveMenu
+'Const MainMenu = 1
+'Const SubMenu = 2
+'Const TextMenu = 3
+'Const QuestMenu = 4
+'Const ItemMenu = 5
+
+
+'---------------------------------------------------------------
+'General
+Sub DA_InitGame()
+  MenuX_2.TextColor(MainMenuItem) = RGB(180, 255, 180)
+  MenuX_0.Update
+End Sub
+
+Sub DA_FrameUpdate(DA_Frames)
+End Sub
+
+
+'---------------------------------------------------------------
+'Timers
+Sub DA_Timer100(DA_Ticks)
+End Sub
+
+Sub DA_Timer250(DA_Ticks)
+End Sub
+
+Sub DA_Timer333(DA_Ticks)
+End Sub
+
+Sub DA_Timer500(DA_Ticks)
+  Dim TmpTime
+  TmpTime = FormatDateTime(Time)
+  MenuX_3.Text(4) = Left(TmpTime, Len(TmpTime) - 3) & Mid(TmpTime, Len(TmpTime) - 1, 1)
+  MenuX_0.Update
+End Sub
+
+Sub DA_Timer750(DA_Ticks)
+End Sub
+
+Sub DA_Timer1000(DA_Ticks)
+End Sub
+
+
+'---------------------------------------------------------------
+'Input - Directions
+Function DA_X_Pos(X_Value)
+  DA_X_Pos=False
+End Function 
+
+Function DA_X_Neg(X_Value)
+  DA_X_Neg=False
+End Function 
+
+Function DA_X_Center(X_Value)
+  DA_X_Center=False
+End Function 
+
+Function DA_Y_Pos(Y_Value)
+  Select Case ActiveWin    
+
+    Case MenuWin
+      MenuX_2.TextColor(MainMenuItem) = RGB(255, 255, 255)
+
+      If MainMenuItem = 9 Then
+        MainMenuItem = 0
+      Else
+        MainMenuItem = MainMenuItem + 1
+      End If
+
+      MenuX_2.TextColor(MainMenuItem) = RGB(180, 255, 180)
+      Call MenuX_2.Update
+      DA_Y_Pos=True
+
+    Case Else
+      DA_Y_Pos=False
+  End Select
+End Function 
+
+Function DA_Y_Neg(Y_Value)
+  Select Case ActiveWin    
+
+    Case MenuWin
+      MenuX_2.TextColor(MainMenuItem) = RGB(255, 255, 255)
+
+      If MainMenuItem = 0 Then
+        MainMenuItem = 9
+      Else
+        MainMenuItem = MainMenuItem - 1
+      End If
+
+      MenuX_2.TextColor(MainMenuItem) = RGB(180, 255, 180)
+      Call MenuX_0.Update
+      DA_Y_Neg=True
+
+    Case Else
+      DA_Y_Neg=False
+  End Select
+End Function 
+
+Function DA_Y_Center(Y_Value)
+  DA_Y_Center=False
+End Function 
+
+
+'---------------------------------------------------------------
+'Input - Buttons (Numerics)
+Function ButtonPressed(ButtonNum)
+  ButtonPressed=False
+  Select Case ActiveWin
+
+    Case WalkWin
+      Select Case ButtonNum
+        Case ButtonMenu
+          MenuX_2.Visible=True
+          MenuX_3.Visible=True
+          MenuX_0.Update
+          ActiveMenu=MainMenu
+          SetActiveWin(MenuWin)
+          ButtonPressed=True
+      End Select
+
+    Case MenuWin
+      Select Case ActiveMenu
+        
+        Case MainMenu
+          Select Case ButtonNum
+
+            Case ButtonOK
+              Select Case MainMenuItem
+                Case 0
+                  MenuX_4.Visible=True
+                  MenuX_0.Update
+                  ActiveMenu=QuestMenu
+
+                Case 1
+                  MenuX_5.Visible=True
+                  MenuX_0.Update
+
+                Case 8
+                  MenuX_2.Visible=False
+                  MenuX_3.Visible=False
+
+                  MenuX_2.TextColor(MainMenuItem) = RGB(255, 255, 255)
+                  MainMenuItem = 0
+                  MenuX_2.TextColor(MainMenuItem) = RGB(180, 255, 180)
+
+                  MenuX_0.Update
+                  SetActiveWin(WalkWin)
+
+                Case 9
+                  Game.ExitEngine
+              End Select
+
+            Case ButtonCancel, ButtonMenu
+              MenuX_2.Visible=False
+              MenuX_3.Visible=False
+              MenuX_0.Update
+              SetActiveWin(WalkWin)
+              ButtonPressed=True
+          End Select
+
+
+
+        Case QuestMenu
+          Select Case ButtonNum
+
+            Case ButtonCancel
+              MenuX_4.Visible=False
+              MenuX_0.Update
+              ActiveMenu=MainMenu
+          End Select
+
+      End Select
+  End Select
+End Function 
+
+Function ButtonUnPressed(ButtonNum)
+End Function 
+
+
+
+'---------------------------------------------------------------
+'Menu-X (continued)
+Function DrawMenu(MenuNum)
+  If MenuNum = 5 Then
+    DrawMenu = False
+  Else
+    DrawMenu = True
+  End If
+End Function

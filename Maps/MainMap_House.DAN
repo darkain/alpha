@@ -1,0 +1,50 @@
+[Header]
+Map=Begining_House.DAM
+Title=Beta Land (House)
+CodeScript=Main.DAC
+Tileset=Main.DAT
+FontSet=Darkain.DAF
+Pallet=DefPallet.DAP
+
+[Charcter]
+DeafX=0
+DefY=0
+DefLayer=0
+DefDir=0
+
+
+[Teleport]
+Transition=3
+srcLayerMin=1
+srcLayerMax=4
+srcX1=9
+srcY1=18
+srcX2=9
+srcY2=18
+destX=9
+destY=18
+destDir=0
+destLayer=1
+destMap=MainMap.DAN
+
+
+
+;must add sign/people support
+;must add in envornment variables
+;envirnmental controls
+;day/night and/or indoor/outdoor (krap like that)
+;basic event controls
+;health alteration zones
+;multi-depth and transport water
+;speed and other changes to character based upon envirnment
+
+
+
+;DAM = Map
+;DAN = Map (Text)
+;DAT = Tileset
+;DAC = Code Script
+;DAF = Font Set
+;MID = Midi Audio (Game Music)
+;WAV = Wave Audio (Sound FX)
+;DAP = Pallet

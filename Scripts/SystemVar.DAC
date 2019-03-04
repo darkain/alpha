@@ -1,0 +1,42 @@
+'CAUTION !!!!!
+'DO NOT MODIFY THIS FILE !!!!!
+'IT MAY CAUSE THE ENGINE TO CRASH !!!!!
+
+
+'Active Window information
+Dim ActiveWin
+Const WalkWin = 1
+Const MenuWin = 2
+
+'Active Menu
+Dim ActiveMenu
+Const MainMenu = 1
+Const SubMenu = 2
+Const TextMenu = 3
+Const QuestMenu = 4
+Const ItemMenu = 5
+
+'Button Numbers
+Dim ButtonMenu
+Dim ButtonAction
+Dim ButtonCancel
+Dim ButtonOK
+
+'Flags
+Const Flag1 = 1
+Const Flag2 = 2
+Const Flag3 = 4
+Const Flag4 = 8
+Const Flag5 = 16
+Const Flag6 = 32
+Const Flag7 = 64
+Const Flag8 = 128
+
+
+
+'System Variables
+Dim DA_ReturnVal
+
+Sub SetActivewin(NewWin)
+  Game.SetActiveWin(NewWin)
+End Sub

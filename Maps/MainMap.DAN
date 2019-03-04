@@ -1,0 +1,85 @@
+[Header]
+Map=Begining.DAM
+Title=Beta Land
+CodeScript=Main.DAC
+Tileset=Main.DAT
+FontSet=Darkain.DAF
+Pallet=DefPallet.DAP
+
+[Charcter]
+DeafX=0
+DefY=0
+DefLayer=0
+DefDir=0
+
+
+[Teleport]
+Transition=3
+srcLayerMin=1
+srcLayerMax=4
+srcX1=9
+srcY1=16
+srcX2=9
+srcY2=16
+destX=9
+destY=16
+destDir=2
+destLayer=1
+destMap=MainMap_House.DAN
+
+
+[Object]
+X1=7
+X2=7
+Y1=17
+Y2=17
+Layer1=0
+Layer2=3
+Type=Text
+Properties=1
+Property0=10
+Property1=Those two swords on the front of this building sure do look nice!
+Activation=1
+
+[Object]
+X1=11
+X2=11
+Y1=17
+Y2=17
+Layer1=0
+Layer2=3
+Type=Text
+Properties=1
+Property0=10
+Property1=Wow!  This sure is a neato sheild!
+Activation=1
+
+
+[NPC]
+Name=Woman
+Sprite=Woman.BMP
+Pic=WomanX.BMP
+
+
+
+;must add sign/people support
+;must add in envornment variables
+;envirnmental controls
+;day/night and/or indoor/outdoor (krap like that)
+;basic event controls
+;health alteration zones
+;multi-depth and transport water
+;speed and other changes to character based upon envirnment
+
+
+
+;DAM = Map
+;DAN = Map (Text)
+;DAT = Tileset
+;DAC = Code Script
+;DAF = Font Set
+;MID = Midi Audio (Game Music)
+;WAV = Wave Audio (Sound FX)
+;DAP = Pallet
+
+

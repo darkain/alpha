@@ -1,0 +1,223 @@
+[MenuX]
+MenuX_ID=1
+CallFunction=
+Font.Bold=False
+Font.Italic=False
+Font.Name=Terminal
+Font.Size=18
+Font.Strikethrough=False
+Font.Underline=False
+X1=0
+Y1=0
+X2=0
+Y2=0
+TextSpeed=0
+TextStyle=0
+  [Text]
+  Text_ID=0
+  Text=
+  Color=0
+  X=0
+  Y=0
+
+  [Text]
+  Text_ID=1
+  Text=
+  Color=0
+  X=0
+  Y=0
+
+  [Text]
+  Text_ID=2
+  Text=
+  Color=0
+  X=0
+  Y=0
+
+
+[MenuX]
+MenuX_ID=2
+CallFunction=
+Font.Bold=False
+Font.Italic=False
+Font.Name=Terminal
+Font.Size=12
+Font.Strikethrough=False
+Font.Underline=False
+X1=15
+Y1=0
+X2=19
+Y2=9
+TextSpeed=0
+TextStyle=0
+  [Text]
+  Text_ID=0
+  Text=Story Log
+  Color=16777215
+  X=500
+  Y=16
+
+  [Text]
+  Text_ID=1
+  Text=Item
+  Color=16777215
+  X=500
+  Y=46
+
+  [Text]
+  Text_ID=2
+  Text=Equip
+  Color=16777215
+  X=500
+  Y=76
+
+  [Text]
+  Text_ID=3
+  Text=Magic
+  Color=16777215
+  X=500
+  Y=106
+
+  [Text]
+  Text_ID=4
+  Text=Status
+  Color=16777215
+  X=500
+  Y=136
+
+  [Text]
+  Text_ID=5
+  Text=Order
+  Color=16777215
+  X=500
+  Y=166
+
+  [Text]
+  Text_ID=6
+  Text=Configure
+  Color=16777215
+  X=500
+  Y=196
+
+  [Text]
+  Text_ID=7
+  Text=Save
+  Color=16777215
+  X=500
+  Y=226
+
+  [Text]
+  Text_ID=8
+  Text=Close Menu
+  Color=16777215
+  X=500
+  Y=256
+
+  [Text]
+  Text_ID=9
+  Text=Exit Game
+  Color=16777215
+  X=500
+  Y=286
+
+[MenuX]
+MenuX_ID=3
+CallFunction=
+Font.Bold=False
+Font.Italic=False
+Font.Name=Terminal
+Font.Size=12
+Font.Strikethrough=False
+Font.Underline=False
+X1=15
+Y1=10
+X2=19
+Y2=14
+TextSpeed=0
+TextStyle=0
+  [Text]
+  Text_ID=4
+  Text=
+  Color=11842815
+  X=515
+  Y=448
+
+
+[MenuX]
+MenuX_ID=4
+CallFunction=
+Font.Bold=False
+Font.Italic=False
+Font.Name=Terminal
+Font.Size=12
+Font.Strikethrough=False
+Font.Underline=False
+X1=0
+Y1=0
+X2=14
+Y2=14
+TextSpeed=0
+TextStyle=0
+  [Text]
+  Text_ID=0
+  Text=1) Search items on front of building
+  Color=11861940
+  X=16
+  Y=16
+
+[MenuX]
+MenuX_ID=5
+CallFunction=
+Font.Bold=False
+Font.Italic=False
+Font.Name=Terminal
+Font.Size=12
+Font.Strikethrough=False
+Font.Underline=False
+X1=0
+Y1=0
+X2=14
+Y2=14
+TextSpeed=0
+TextStyle=0
+  [Text]
+  Text_ID=0
+  Text=
+  Color=11861940
+  X=16
+  Y=16
+
+  [Text]
+  Text_ID=1
+  Text=
+  Color=11861940
+  X=16
+  Y=36
+
+  [Text]
+  Text_ID=2
+  Text=
+  Color=11861940
+  X=16
+  Y=56
+
+  [Text]
+  Text_ID=3
+  Text=
+  Color=11861940
+  X=16
+  Y=76
+
+  [Text]
+  Text_ID=4
+  Text=
+  Color=11861940
+  X=16
+  Y=96
+
+  [Text]
+  Text_ID=5
+  Text=
+  Color=11861940
+  X=16
+  Y=116

@@ -1,0 +1,12 @@
+frmMain = 110, 149, 641, 595, C, 327, 334, 696, 653, C
+MainDK = 44, 44, 683, 541, C
+SD = 88, 88, 650, 603, C
+Debuger = 110, 110, 665, 555, C, 342, 69, 844, 300, C
+DirectSoundDK = 132, 132, 687, 577, C
+DirectDrawDK = 44, 155, 1233, 941, C
+DirectInputDK = 136, 139, 691, 584, C
+OthersDK = 115, 157, 670, 602, C
+DirectMusicDK = 66, 66, 626, 643, C
+EventsDK = 66, 66, 621, 511, C
+DebugStats = 176, 176, 739, 621, C, 54, 30, 283, 609, C
+MenuClass = 132, 132, 695, 577, C
